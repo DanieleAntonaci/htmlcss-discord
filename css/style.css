@@ -6,20 +6,12 @@
 }
 
 body{
-    font-size: 20px;
+    font-size: 23px;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
-
 
 
 /* header */
-
-header{
-    /* debug */
-    /* background-color: blue;
-    min-height: 400px;
-    color: white; */
-}
 
 #header-container{
     
@@ -27,33 +19,22 @@ header{
     flex-direction: column;
     align-items: center;
 
-    height: 600px;
+    height: 620px;
+    color: white;
     
-    /* debug */
-    background-color: aqua;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
 }
+
 #nav-bar{
     height: 15%;
     width: 80%;
+    font-size: 18px;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-
-
-    /* debug */
-    border: 2px solid black;
-}
-
-
-#menu-navigazione {
-
-}
-
-/* debug */
-#nav-bar div{
-    border: 2px solid black;
 }
 
 .logo-link{
@@ -64,30 +45,78 @@ header{
 .menu-link{
     width: 60%;
     text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.menu-link a{
+    text-decoration: none;
+    color: rgba(225, 225, 225, 1);
+}
+
+/* bt accedi */
 .accedi-link{
     width: 20%;
     text-align: right;
+   
+}
+
+.accedi-link a{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 4% 6%;
+    text-decoration: none;
 }
 
 #title{
     height: 85%;
-    width: 80%;
+    width: 77%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* debug */
-    border: 2px solid black;
 }
 
 #title div{
-    width: 50%;
-    height: 80%;
-    /* debug */
-    border: 2px solid black;
+    width: 70%;
+    height: 60%;
+   text-align: center;
 }
+
+#title h1{
+    font-size: 60px;
+    padding-bottom: 4%;
+}
+#title p{
+    padding-bottom: 5%;
+}
+.decorazione-bt{
+    text-decoration: none;
+}
+
+.bt-download{
+    background-color: white;
+    padding: 2%;
+    border-radius: 40px;
+    color: black;
+    margin-right: 2%;
+}
+.bt-download::before{
+    content:"\2B63";
+    font-size: 24px;
+}
+.bt-browser{
+    background-color: rgb(27, 29, 32);
+    padding: 2%;
+    border-radius: 40px;
+    color: white;
+}
+}
+
+
+/* Sezione main */
 
 .articol{
     max-width: 1200px;
